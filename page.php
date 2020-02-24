@@ -7,7 +7,7 @@
 function custom_fee() {
  
 	global $woocommerce;
-        $fee=40;
+        $fee=40;  //here you can change the fee value
 	$woocommerce->cart->add_fee( __('Custom Fee', 'woocommerce'), $fee ); 
 }
 add_action( 'woocommerce_cart_calculate_fees', 'custom_fee' );
